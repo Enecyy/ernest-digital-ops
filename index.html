@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ernest Digital Ops — Digital Operator for Small Business</title>
+<meta name="description" content="Remote digital operator helping Saskatchewan small businesses with websites, CRM, social media, ads and admin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Ernest Digital Ops</a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+    <button class="nav-cta" onclick="openAudit()">Book free audit</button>
+    <button class="theme-btn" id="themeBtn">🌙</button>
+  </div>
+  <button class="nav-ham" id="hamBtn" aria-label="Menu">☰</button>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#work" onclick="closeMenu()">Work</a>
+  <a href="#pricing" onclick="closeMenu()">Pricing</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <button onclick="closeMenu();openAudit()">Book free audit</button>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left fi">
+    <span class="hero-tag">Available for new clients</span>
+    <h1>Remote <em>Digital Operator</em> for Small Business</h1>
+    <p class="hero-sub">I help Saskatchewan small businesses compete online — websites, CRM, social media, ads, and admin — all done remotely, at a fraction of hiring local staff.</p>
+    <div class="hero-btns">
+      <button class="btn-p" onclick="openAudit()">Book a free audit →</button>
+      <a href="#work" class="btn-o">See my work</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Professional at work" loading="eager"/>
+    <div class="hero-float"><p>Serving clients across</p><strong>Saskatchewan, CA 🍁</strong></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats fi">
+  <div class="stat-item"><div class="stat-num">149K+</div><div class="stat-label">Small businesses in Saskatchewan</div></div>
+  <div class="stat-item"><div class="stat-num">71.6%</div><div class="stat-label">Solo operators with no digital staff</div></div>
+  <div class="stat-item"><div class="stat-num">39.4%</div><div class="stat-label">Business growth in the last 10 years</div></div>
+  <div class="stat-item"><div class="stat-num">$960</div><div class="stat-label">Avg weekly cost of one local employee</div></div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="si about-g">
+    <div class="about-img-w fi">
+      <img class="about-img" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&q=80" alt="Working remotely" loading="lazy"/>
+      <div class="about-badge">Remote-first.<br>Results-focused.</div>
+    </div>
+    <div class="fi">
+      <p class="ey">About me</p>
+      <h2>One person. Full digital stack.</h2>
+      <div class="about-body">
+        <p>I'm a remote digital operator based in Lagos, Nigeria, working with small businesses across Canada. I build websites, run ads, set up CRMs, manage social media, and handle executive admin — everything a growing business needs digitally, without the overhead of hiring a local team.</p>
+        <p>I already run my own dropshipping operation on Jumia, so I understand what small business owners actually face day to day. I bring that lived experience — not just theory — to every client I work with.</p>
+      </div>
+      <div class="skills">
+        <span class="stag">HTML / CSS / JS</span><span class="stag">Google Workspace</span><span class="stag">Asana</span><span class="stag">Slack</span><span class="stag">TripIt</span><span class="stag">Meta Ads</span><span class="stag">Google Ads</span><span class="stag">HubSpot CRM</span><span class="stag">Canva</span><span class="stag">Excel</span><span class="stag">Social Media</span><span class="stag">Automation</span><span class="stag">Dropshipping</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="si">
+    <p class="ey">What I do</p>
+    <h2>Services built for how small businesses actually work</h2>
+    <p class="sec-sub">Each package solves a real pain — not a list of generic features.</p>
+    <div class="svc-grid">
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="5" width="26" height="18" rx="2"/><line x1="2" y1="10" x2="28" y2="10"/><circle cx="5.5" cy="7.5" r="1" class="df"/><circle cx="8.5" cy="7.5" r="1" class="df"/><circle cx="11.5" cy="7.5" r="1" class="df"/><line x1="8" y1="16" x2="22" y2="16"/><line x1="8" y1="19" x2="18" y2="19"/></svg></div>
+        <h3>Digital Starter Pack</h3>
+        <p>A clean, fast landing page with Google Calendar booking, a contact form, and automated thank-you messages. Everything a new business needs to look professional and start getting clients online.</p>
+        <div class="svc-bottom"><span class="svc-price">From $350 CAD — one-time</span><button class="svc-req" onclick="openModal('Digital Starter Pack','Landing page + booking + automation','starter')">Request this →</button></div>
+      </div>
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg viewBox="0 0 30 30" aria-hidden="true"><rect x="3" y="4" width="10" height="10" rx="2"/><rect x="17" y="4" width="10" height="10" rx="2"/><rect x="3" y="17" width="10" height="10" rx="2"/><rect x="17" y="17" width="10" height="10" rx="2"/><circle cx="8" cy="9" r="2" class="df"/><circle cx="22" cy="9" r="2" class="df"/><line x1="6" y1="20" x2="12" y2="20"/><line x1="6" y1="23" x2="10" y2="23"/><line x1="19" y1="20" x2="25" y2="20"/><line x1="19" y1="23" x2="23" y2="23"/></svg></div>
+        <h3>CRM + Admin Setup</h3>
+        <p>I set up your CRM, automate your client onboarding flow, connect your calendar, and build systems so nothing slips through the cracks. Asana, HubSpot, Notion — whichever fits your workflow.</p>
+        <div class="svc-bottom"><span class="svc-price">From $400 CAD — one-time</span><button class="svc-req" onclick="openModal('CRM + Admin Setup','CRM configuration + automation flows','crm')">Request this →</button></div>
+      </div>
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg viewBox="0 0 30 30" aria-hidden="true"><rect x="4" y="4" width="22" height="22" rx="5"/><circle cx="15" cy="15" r="5"/><circle cx="21.5" cy="8.5" r="1.5" class="df"/></svg></div>
+        <h3>Social Media Management</h3>
+        <p>3–4 posts per week, content calendar, Canva graphics, and monthly reporting. Your brand stays active and consistent while you focus on running your business.</p>
+        <div class="svc-bottom"><span class="svc-price">From $500 CAD/month</span><button class="svc-req" onclick="openModal('Social Media Management','3–4 posts/week + graphics + reporting','social')">Request this →</button></div>
+      </div>
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg viewBox="0 0 30 30" aria-hidden="true"><polyline points="3,22 10,13 15,17 21,9 27,9"/><circle cx="27" cy="9" r="2" class="df"/><line x1="3" y1="26" x2="27" y2="26"/><rect x="6" y="20" width="3" height="6" rx="1"/><rect x="12" y="16" width="3" height="10" rx="1"/><rect x="18" y="13" width="3" height="13" rx="1"/></svg></div>
+        <h3>Ads Management</h3>
+        <p>Meta or Google Ads — audience research, creative setup, A/B testing, and competitor analysis. I manage the budget, optimise weekly, and report results bi-weekly.</p>
+        <div class="svc-bottom"><span class="svc-price">From $400 CAD/month</span><button class="svc-req" onclick="openModal('Ads Management','Meta/Google Ads setup + optimisation + reporting','ads')">Request this →</button></div>
+      </div>
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="9" r="5"/><path d="M5 26 C5 20 10 17 15 17 C20 17 25 20 25 26"/><line x1="20" y1="5" x2="25" y2="3"/><line x1="22" y1="8" x2="27" y2="8"/><line x1="20" y1="11" x2="25" y2="13"/></svg></div>
+        <h3>Virtual COO / Executive Assistant</h3>
+        <p>Full admin, calendar, email, CRM, social media, and basic ads — all in one retainer. Ideal for solo founders and women-owned businesses who need a reliable operator in the back office.</p>
+        <div class="svc-bottom"><span class="svc-price">From $800 CAD/month</span><button class="svc-req" onclick="openModal('Virtual COO / Executive Assistant','Full admin + CRM + social + ops retainer','coo')">Request this →</button></div>
+      </div>
+      <div class="svc-card fi">
+        <div class="svc-icon"><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M3 5 L6 5 L9 19 L23 19 L26 9 L9 9"/><circle cx="12" cy="23" r="2" class="df"/><circle cx="20" cy="23" r="2" class="df"/><line x1="13" y1="13" x2="19" y2="13"/><line x1="16" y1="10" x2="16" y2="16"/></svg></div>
+        <h3>E-commerce + Inventory Ops</h3>
+        <p>Product listing, inventory tracking, order management, and supplier communication. I run e-commerce operations myself on Jumia — real experience, not theory.</p>
+        <div class="svc-bottom"><span class="svc-price">From $450 CAD/month</span><button class="svc-req" onclick="openModal('E-commerce + Inventory Ops','Listings + inventory + order management','ecom')">Request this →</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOCKUPS -->
+<section class="mockups" id="mockups">
+  <div class="si">
+    <p class="ey">How it looks</p>
+    <h2>Examples of what you get</h2>
+    <p class="sec-sub">Real mockups of each deliverable — so you know exactly what to expect before we start.</p>
+    <div class="mtabs">
+      <button class="tab-btn active" onclick="showTab('landing',this)">Landing page</button>
+      <button class="tab-btn" onclick="showTab('crm',this)">CRM dashboard</button>
+      <button class="tab-btn" onclick="showTab('social',this)">Social content</button>
+      <button class="tab-btn" onclick="showTab('ads',this)">Ads report</button>
+    </div>
+    <div class="mf active fi" id="tab-landing">
+      <div class="browser">
+        <div class="bbar"><div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div><div class="url">prairie-realty.ca</div></div>
+        <div class="mk-hero-sec">
+          <div>
+            <div style="font-size:.68rem;color:#52B788;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.45rem">Saskatchewan Real Estate</div>
+            <div class="mk-h">Find your place in the prairies</div>
+            <div class="mk-s">Prairie Realty helps Saskatchewan families buy and sell homes with honest local advice and a straightforward process.</div>
+            <a class="mk-b" href="#" onclick="return false">Book a free consultation →</a>
+          </div>
+          <div class="mk-pi"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&q=70" alt="House" loading="lazy"/></div>
+        </div>
+        <div class="mk-3">
+          <div class="mk-c"><div class="mk-ci">🏡</div><div class="mk-ct">Buying</div><div class="mk-cd">We find the right home at the right price for your family.</div></div>
+          <div class="mk-c"><div class="mk-ci">📝</div><div class="mk-ct">Selling</div><div class="mk-cd">Strategic pricing, staging tips, and fast closings.</div></div>
+          <div class="mk-c"><div class="mk-ci">📅</div><div class="mk-ct">Book a call</div><div class="mk-cd">30-min free consultation — pick a time that works.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="mf fi" id="tab-crm">
+      <div class="browser">
+        <div class="bbar"><div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div><div class="url">app.hubspot.com — Prairie Realty CRM</div></div>
+        <div class="mk-crm">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.85rem"><div style="font-size:.88rem;font-weight:500;color:var(--ink)">Client pipeline — October 2024</div><div style="font-size:.73rem;color:var(--accent)">+ Add contact</div></div>
+          <div class="mk-g4">
+            <div class="mk-sb"><div class="mk-sn">24</div><div class="mk-sl">Active leads</div></div>
+            <div class="mk-sb"><div class="mk-sn">8</div><div class="mk-sl">Follow-ups due</div></div>
+            <div class="mk-sb"><div class="mk-sn">3</div><div class="mk-sl">Deals closing</div></div>
+            <div class="mk-sb"><div class="mk-sn">$1.2M</div><div class="mk-sl">Pipeline value</div></div>
+          </div>
+          <table class="mk-t"><thead><tr><th>Name</th><th>Stage</th><th>Last contact</th><th>Next action</th><th>Status</th></tr></thead><tbody>
+            <tr><td>Sarah & Tom Kowalski</td><td>Viewing booked</td><td>2 days ago</td><td>Send property list</td><td><span class="bdg bg">Active</span></td></tr>
+            <tr><td>Marcus Petrov</td><td>Offer made</td><td>Today</td><td>Await response</td><td><span class="bdg ba">Pending</span></td></tr>
+            <tr><td>Linda Fontaine</td><td>New inquiry</td><td>1 hour ago</td><td>Intro call</td><td><span class="bdg bg">Active</span></td></tr>
+            <tr><td>Derek & Kim Huang</td><td>Closed</td><td>Last week</td><td>Request review</td><td><span class="bdg bgr">Closed</span></td></tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+    <div class="mf fi" id="tab-social">
+      <div class="browser">
+        <div class="bbar"><div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div><div class="url">instagram.com — @prairierealty</div></div>
+        <div class="mk-soc">
+          <div class="mk-post"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&q=70" alt="House listing" loading="lazy"/><div class="mk-pb"><div class="mk-han">@prairierealty</div><div class="mk-pt">Just listed in Saskatoon's Stonebridge — 4 bed, 2 bath, double garage. DM or click bio link to book a showing. 🏡</div><div class="mk-pm">❤️ 47 · 💬 12 · 2h</div></div></div>
+          <div class="mk-post"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=70" alt="Home interior" loading="lazy"/><div class="mk-pb"><div class="mk-han">@prairierealty</div><div class="mk-pt">Saskatchewan's small business sector grew 39.4% in 10 years. The local economy is thriving. Let's talk. 📈</div><div class="mk-pm">❤️ 83 · 💬 9 · Yesterday</div></div></div>
+          <div class="mk-post"><img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=400&q=70" alt="Family home" loading="lazy"/><div class="mk-pb"><div class="mk-han">@prairierealty</div><div class="mk-pt">Congratulations to the Kowalski family on the keys to their new Regina home! 🔑</div><div class="mk-pm">❤️ 124 · 💬 31 · 3 days</div></div></div>
+          <div class="mk-post"><img src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=400&q=70" alt="Prairie landscape" loading="lazy"/><div class="mk-pb"><div class="mk-han">@prairierealty</div><div class="mk-pt">Fall is one of the best times to buy in SK. Less competition, motivated sellers. DM us "FALL" for a free market report.</div><div class="mk-pm">❤️ 61 · 💬 18 · 4 days</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="mf fi" id="tab-ads">
+      <div class="browser">
+        <div class="bbar"><div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div><div class="url">Ads Report — Prairie Realty — Oct 2024</div></div>
+        <div class="mk-ads">
+          <div style="margin-bottom:.85rem"><div style="font-size:.88rem;font-weight:500;color:var(--ink);margin-bottom:.15rem">Meta Ads performance — October 2024</div><div style="font-size:.72rem;color:var(--ink3)">Campaign: Fall buyer outreach · Budget: $500 CAD</div></div>
+          <div class="mk-kpis">
+            <div class="mk-kpi"><div class="mk-kv">18,420</div><div class="mk-kl">Reach</div><div class="mk-kc">↑ 23% vs last month</div></div>
+            <div class="mk-kpi"><div class="mk-kv">312</div><div class="mk-kl">Link clicks</div><div class="mk-kc">↑ 14% vs last month</div></div>
+            <div class="mk-kpi"><div class="mk-kv">$1.60</div><div class="mk-kl">Cost per click</div><div class="mk-kc">↓ 8% (improved)</div></div>
+          </div>
+          <div style="font-size:.76rem;color:var(--ink2);margin-bottom:.55rem;font-weight:500">Clicks by ad creative</div>
+          <div class="br-row"><div class="br-l">House listing</div><div class="br-t"><div class="br-f" style="width:82%"></div></div><div class="br-v">128</div></div>
+          <div class="br-row"><div class="br-l">Fall market tip</div><div class="br-t"><div class="br-f" style="width:60%"></div></div><div class="br-v">94</div></div>
+          <div class="br-row"><div class="br-l">Testimonial</div><div class="br-t"><div class="br-f" style="width:45%"></div></div><div class="br-v">58</div></div>
+          <div class="br-row"><div class="br-l">Brand video</div><div class="br-t"><div class="br-f" style="width:20%"></div></div><div class="br-v">32</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="work">
+  <div class="si">
+    <p class="ey">Portfolio</p>
+    <h2>Work I've done</h2>
+    <p class="sec-sub">Click any project to read the full case study and request something similar.</p>
+    <div class="port-grid">
+      <div class="port-card fi">
+        <img class="port-img" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=70" alt="E-commerce store" loading="lazy"/>
+        <div class="port-body">
+          <div class="port-tag">E-commerce · Dropshipping</div>
+          <h3>Jumia product store — Lagos</h3>
+          <p>End-to-end product listings, inventory tracking, customer communications, and order fulfilment for a multi-category dropshipping store. Built Excel dashboards to track stock and margins daily.</p>
+          <div class="port-actions">
+            <button class="port-btn" onclick="openProject('ecom')">View case study →</button>
+            <button class="port-btn primary" onclick="openModal('E-commerce + Inventory Ops','Listings + inventory + order management','ecom')">Request this service</button>
+          </div>
+        </div>
+      </div>
+      <div class="port-card fi">
+        <img class="port-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=70" alt="Business website" loading="lazy"/>
+        <div class="port-body">
+          <div class="port-tag">Web build · Automation</div>
+          <h3>Service business landing page + booking</h3>
+          <p>Built a one-page HTML/CSS/JS website for a service provider with Google Calendar booking integration, automated welcome emails, and a mobile-responsive layout. Live in 6 days.</p>
+          <div class="port-actions">
+            <button class="port-btn" onclick="openProject('web')">View case study →</button>
+            <button class="port-btn primary" onclick="openModal('Digital Starter Pack','Landing page + booking + automation','starter')">Request this service</button>
+          </div>
+        </div>
+      </div>
+      <div class="port-card fi">
+        <img class="port-img" src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800&q=70" alt="Social media" loading="lazy"/>
+        <div class="port-body">
+          <div class="port-tag">Social media · Content</div>
+          <h3>Social media account management</h3>
+          <p>Managed posting schedule, content calendar, and Canva graphics for a business account. Grew engagement through consistent posting and community management across Instagram and Facebook.</p>
+          <div class="port-actions">
+            <button class="port-btn" onclick="openProject('social')">View case study →</button>
+            <button class="port-btn primary" onclick="openModal('Social Media Management','3–4 posts/week + graphics + reporting','social')">Request this service</button>
+          </div>
+        </div>
+      </div>
+      <div class="port-card fi">
+        <img class="port-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=70" alt="CRM setup" loading="lazy"/>
+        <div class="port-body">
+          <div class="port-tag">CRM · Admin · Automation</div>
+          <h3>CRM setup + onboarding automation</h3>
+          <p>Configured HubSpot for a service business: contact pipeline, automated follow-up sequences, appointment reminders via Google Calendar, and a weekly reporting dashboard in Excel.</p>
+          <div class="port-actions">
+            <button class="port-btn" onclick="openProject('crm')">View case study →</button>
+            <button class="port-btn primary" onclick="openModal('CRM + Admin Setup','CRM configuration + automation flows','crm')">Request this service</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="background:var(--bg2)">
+  <div class="si">
+    <p class="ey">Pricing</p>
+    <h2>Clear, honest rates in CAD</h2>
+    <p class="sec-sub">A local SK employee costs ~$960/week. You get more skills, more flexibility, for a fraction of that.</p>
+    <div class="price-grid">
+      <div class="price-card fi">
+        <div class="price-name">Digital starter</div>
+        <div class="price-amt">$350</div>
+        <div class="price-cad">CAD — one-time project</div>
+        <div class="price-div"></div>
+        <div class="price-features">
+          <div class="pf">Landing page (HTML/CSS/JS)</div>
+          <div class="pf">Google Calendar booking</div>
+          <div class="pf">Contact form + automation</div>
+          <div class="pf">Canva banner/logo</div>
+        </div>
+        <button class="price-cta" onclick="openModal('Digital Starter Pack','Landing page + Google Calendar booking + automation','starter')">Get started →</button>
+      </div>
+      <div class="price-card pop fi">
+        <div class="pop-badge">Most popular</div>
+        <div class="price-name">Digital ops retainer</div>
+        <div class="price-amt">$600</div>
+        <div class="price-cad">CAD/month</div>
+        <div class="price-div"></div>
+        <div class="price-features">
+          <div class="pf">Social media (3–4 posts/wk)</div>
+          <div class="pf">CRM + automation flows</div>
+          <div class="pf">Email follow-up sequences</div>
+          <div class="pf">Monthly performance report</div>
+        </div>
+        <button class="price-cta" onclick="openModal('Digital Ops Retainer','Social media + CRM + automation + monthly reporting','retainer')">Get started →</button>
+      </div>
+      <div class="price-card fi">
+        <div class="price-name">Ads management</div>
+        <div class="price-amt">$500</div>
+        <div class="price-cad">CAD/month + ad spend</div>
+        <div class="price-div"></div>
+        <div class="price-features">
+          <div class="pf">Meta or Google Ads setup</div>
+          <div class="pf">Audience + creative build</div>
+          <div class="pf">Competitor analysis</div>
+          <div class="pf">Bi-weekly reporting</div>
+        </div>
+        <button class="price-cta" onclick="openModal('Ads Management','Meta/Google Ads setup + optimisation + bi-weekly reporting','ads')">Get started →</button>
+      </div>
+      <div class="price-card fi">
+        <div class="price-name">Virtual COO</div>
+        <div class="price-amt">$900</div>
+        <div class="price-cad">CAD/month</div>
+        <div class="price-div"></div>
+        <div class="price-features">
+          <div class="pf">Full admin + calendar</div>
+          <div class="pf">CRM + Asana/Slack ops</div>
+          <div class="pf">Inventory tracking</div>
+          <div class="pf">Social + basic ads included</div>
+        </div>
+        <button class="price-cta" onclick="openModal('Virtual COO','Full admin + CRM + social + ops — all-in-one retainer','coo')">Get started →</button>
+      </div>
+    </div>
+    <p style="font-size:.78rem;color:var(--ink3);margin-top:1.4rem;text-align:center">All prices in CAD · Invoiced via Wise or Payoneer · Monthly payment in advance</p>
+  </div>
+</section>
+
+<!-- AUDIT CTA STRIP -->
+<div class="audit-strip">
+  <h2>Not sure where to start?</h2>
+  <p>Book a free 30-minute audit. I'll review your website, Google presence, and social media live — and give you a clear picture of what's working and what to fix first.</p>
+  <button class="audit-strip-btn" onclick="openAudit()">Book your free audit →</button>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testi" id="testimonials">
+  <div class="si">
+    <p class="ey">Client feedback</p>
+    <h2>What clients say</h2>
+    <div class="testi-grid">
+      <div class="testi-card fi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Within two weeks of working together, our booking rate doubled. The website was clean, fast, and everything worked exactly as described. Genuinely impressed."</p>
+        <div class="testi-aut"><img class="testi-av" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80" alt="Sarah M." loading="lazy"/><div><div class="testi-name">Sarah M.</div><div class="testi-role">Wellness clinic owner, Saskatoon</div></div></div>
+      </div>
+      <div class="testi-card fi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I was spending 10+ hours a week on admin. Now I check one dashboard and everything is handled. The CRM setup alone was worth every dollar."</p>
+        <div class="testi-aut"><img class="testi-av" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="David K." loading="lazy"/><div><div class="testi-name">David K.</div><div class="testi-role">Real estate agent, Regina</div></div></div>
+      </div>
+      <div class="testi-card fi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Our Instagram went from dead to our top lead source in 60 days. Consistent content, great graphics, someone who genuinely understands small business owners."</p>
+        <div class="testi-aut"><img class="testi-av" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Amara J." loading="lazy"/><div><div class="testi-name">Amara J.</div><div class="testi-role">Boutique owner, Saskatoon</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-sec" id="contact">
+  <div class="si contact-w">
+    <p class="ey" style="text-align:center">Get in touch</p>
+    <h2>Let's talk about your business</h2>
+    <p>Tell me what you're working on and I'll come back within 24 hours with a clear plan.</p>
+    <form class="cform" id="cForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <div class="form-row">
+        <div class="fw"><input type="text" id="fn" name="name" placeholder="Your name" autocomplete="name"/><span class="ferr" id="e-fn">Please enter your name.</span></div>
+        <div class="fw"><input type="email" id="fe" name="email" placeholder="Email address" autocomplete="email"/><span class="ferr" id="e-fe">Please enter a valid email address.</span></div>
+      </div>
+      <div class="fw">
+        <select id="fs" name="service"><option value="" disabled selected>What do you need?</option><option>Digital Starter Pack</option><option>CRM + Admin Setup</option><option>Social Media Management</option><option>Ads Management</option><option>Virtual COO / Executive Assistant</option><option>E-commerce + Inventory Ops</option><option>Not sure — let's talk</option></select>
+        <span class="ferr" id="e-fs">Please select a service.</span>
+      </div>
+      <div class="fw"><textarea id="fm" name="message" placeholder="Tell me a bit about your business and what you're trying to solve..."></textarea><span class="ferr" id="e-fm">Please describe your project (at least 10 characters).</span></div>
+      <button type="submit">Send message →</button>
+    </form>
+    <div id="fok">✓ Message sent — I'll be in touch within 24 hours.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="f-logo">Your Name</div>
+      <p>Remote digital operator helping Saskatchewan small businesses grow online — websites, CRM, social media, ads and admin done right.</p>
+      <div class="f-social">
+        <a class="f-soc-btn" href="#" aria-label="LinkedIn">in</a>
+        <a class="f-soc-btn" href="#" aria-label="Upwork">U</a>
+        <a class="f-soc-btn" href="#" aria-label="WhatsApp">W</a>
+      </div>
+    </div>
+    <div class="f-col">
+      <div class="f-col-title">Services</div>
+      <button onclick="openModal('Digital Starter Pack','Landing page + booking + automation','starter')">Digital Starter Pack</button>
+      <button onclick="openModal('CRM + Admin Setup','CRM configuration + automation flows','crm')">CRM + Admin Setup</button>
+      <button onclick="openModal('Social Media Management','3–4 posts/week + graphics + reporting','social')">Social Media</button>
+      <button onclick="openModal('Ads Management','Meta/Google Ads setup + optimisation','ads')">Ads Management</button>
+      <button onclick="openModal('Virtual COO','Full admin + CRM + social + ops','coo')">Virtual COO</button>
+    </div>
+    <div class="f-col">
+      <div class="f-col-title">Navigate</div>
+      <a href="#about">About</a><a href="#work">Portfolio</a><a href="#pricing">Pricing</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a>
+    </div>
+    <div class="f-col">
+      <div class="f-col-title">Connect</div>
+      <a href="mailto:you@email.com">you@email.com</a>
+      <a href="#">LinkedIn</a><a href="#">Upwork profile</a><a href="#">WhatsApp</a>
+      <button onclick="openAudit()" style="color:var(--accent)!important;margin-top:.4rem">Book free audit →</button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 Your Name. All rights reserved.</div>
+    <div class="footer-avail">Available for new clients — response within 24 hrs</div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════ -->
+<!-- SERVICE REQUEST MODAL                    -->
+<!-- ════════════════════════════════════════ -->
+<div class="overlay" id="serviceModal" onclick="overlayClick(event,'serviceModal')">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="modal-head">
+      <div>
+        <div id="mPill" class="pkg-pill">Digital Starter Pack</div>
+        <h3 id="mTitle">Request this service</h3>
+        <p id="mSubtitle" style="font-size:.83rem;color:var(--ink2);margin-top:.22rem">Landing page + booking + automation</p>
+      </div>
+      <button class="close-btn" onclick="closeModal('serviceModal')" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body">
+      <form class="mform" id="mForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <input type="hidden" id="mService" name="service"/>
+        <div class="mform-row">
+          <div class="mfw"><input type="text" id="mName" name="name" placeholder="Your name" autocomplete="name"/><div class="mferr" id="me-mName">Please enter your name.</div></div>
+          <div class="mfw"><input type="email" id="mEmail" name="email" placeholder="Email address" autocomplete="email"/><div class="mferr" id="me-mEmail">Please enter a valid email address.</div></div>
+        </div>
+        <div class="mfw"><input type="text" id="mBiz" name="business" placeholder="Business name (optional)" autocomplete="organization"/></div>
+        <div class="mfw"><input type="text" id="mSite" name="website" placeholder="Your website or social link (optional)"/></div>
+        <div class="mfw"><textarea id="mMsg" name="message" placeholder="Tell me about your business and what you're trying to achieve..."></textarea><div class="mferr" id="me-mMsg">Please tell me a bit about your project.</div></div>
+        <button type="submit">Send request — I'll reply within 24 hrs →</button>
+      </form>
+      <div id="mOk" class="m-ok">
+        <div class="m-ok-icon">✓</div>
+        <h4>Request received!</h4>
+        <p>I'll review your details and get back to you within 24 hours with a clear next step — no pressure, no fluff.</p>
+        <div class="next-steps">
+          <div class="ns-title">What happens next</div>
+          <div class="ns-item">I'll review your business and prepare for our call</div>
+          <div class="ns-item">You'll get a reply with a proposed start date and simple agreement</div>
+          <div class="ns-item">We kick off within the week</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- FREE AUDIT MODAL                         -->
+<!-- ════════════════════════════════════════ -->
+<div class="overlay" id="auditModal" onclick="overlayClick(event,'auditModal')">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="aTitle">
+    <div class="modal-head">
+      <div>
+        <div class="pkg-pill" style="background:var(--ink);color:var(--bg)">Free · No obligation</div>
+        <h3 id="aTitle">Book your free 30-minute audit</h3>
+        <p style="font-size:.83rem;color:var(--ink2);margin-top:.22rem">I'll review your website, Google presence, and social media live — and tell you exactly what to fix first.</p>
+      </div>
+      <button class="close-btn" onclick="closeModal('auditModal')" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body">
+      <form class="mform" id="aForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <input type="hidden" name="type" value="Free audit request"/>
+        <div class="mform-row">
+          <div class="mfw"><input type="text" id="aN" name="name" placeholder="Your name" autocomplete="name"/><div class="mferr" id="me-aN">Please enter your name.</div></div>
+          <div class="mfw"><input type="email" id="aE" name="email" placeholder="Email address" autocomplete="email"/><div class="mferr" id="me-aE">Please enter a valid email address.</div></div>
+        </div>
+        <div class="mfw"><input type="text" id="aBiz" name="business" placeholder="Business name" autocomplete="organization"/><div class="mferr" id="me-aBiz">Please enter your business name.</div></div>
+        <div class="mfw"><input type="text" id="aSite" name="website" placeholder="Website or social media link (if you have one)"/></div>
+        <div class="mfw">
+          <select id="aBest" name="best_time"><option value="" disabled selected>Best time for a call (Saskatchewan time)</option><option>Weekday mornings (9am–12pm CST)</option><option>Weekday afternoons (12pm–5pm CST)</option><option>Weekday evenings (5pm–7pm CST)</option><option>Flexible — I'll follow your lead</option></select>
+        </div>
+        <button type="submit">Book my free audit →</button>
+      </form>
+      <div id="aOk" class="m-ok">
+        <div class="m-ok-icon">📋</div>
+        <h4>You're booked in!</h4>
+        <p>I'll confirm a time within 24 hours and send you a short prep questionnaire so we can make the most of our 30 minutes together.</p>
+        <div class="next-steps">
+          <div class="ns-title">What to expect in your audit</div>
+          <div class="ns-item">Live review of your website, Google listing, and social media</div>
+          <div class="ns-item">A scored breakdown — what's working, what's leaking leads</div>
+          <div class="ns-item">One clear recommendation to act on immediately</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- PROJECT DETAIL MODAL                     -->
+<!-- ════════════════════════════════════════ -->
+<div class="overlay" id="projectModal" onclick="overlayClick(event,'projectModal')">
+  <div class="modal modal-lg" role="dialog" aria-modal="true">
+    <div class="modal-head">
+      <div><div id="pTag" class="pkg-pill"></div><h3 id="pTitle"></h3></div>
+      <button class="close-btn" onclick="closeModal('projectModal')" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body"><div id="pBody"></div></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
